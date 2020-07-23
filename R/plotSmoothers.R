@@ -165,14 +165,14 @@
                                       "gene_count" = yhat,
                                       "lineage" = as.character(jj),
                                       "pCol" = as.character(jj)),
-                    lwd = lwd, col=viridis::viridis(nCurves)[jj])
+                    lwd = lwd)
       } else {
         p <- p +
           geom_line(data = data.frame("time" = df[, paste0("t", jj)],
                                       "gene_count" = yhat,
                                       "lineage" = as.character(jj),
                                       "pCol" = as.character(jj)),
-                    lwd = lwd, col=viridis::viridis(nCurves)[jj])
+                    lwd = lwd)
       }
 
     }
